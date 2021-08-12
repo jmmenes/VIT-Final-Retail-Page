@@ -7,6 +7,9 @@
     <title>Alvarez Regent Series Concert Ukulele | Ukelele.com</title>
     <!-- Favicon-->
     <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <!-- Linked Bootstrap -->
+    <link href="./css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css" />
     <!-- Linked CSS -->
     <link href="styles.css" rel="stylesheet" type="text/css" />
   </head>
@@ -18,19 +21,35 @@
       <div id="nav">
         <div class="navbar">
           <div class="logo">
-            <img src="./images/logo.png" width="125px" alt="125" />
+            <a href="https://store.ukulelemag.com/">
+              <img src="./images/logo.png" width="125px" alt="125" />
+            </a>
           </div>
           <nav>
             <ul>
               <li>
-                <a href=""><h3>Used</h3></a>
+                <a
+                  href="https://www.guitarcenter.com/Used/Guitars.gc"
+                  target="_blank"
+                  ><h3>Used</h3></a
+                >
               </li>
               <li>
-                <a href=""><h3>Vintage</h3></a>
+                <a
+                  href="https://www.guitarcenter.com/Vintage/Guitars.gc"
+                  target="_blank"
+                  ><h3>Vintage</h3></a
+                >
               </li>
             </ul>
           </nav>
-          <img src="./images/cart.png" width="30px" height="30px" />
+          <input
+            type="image"
+            src="./images/cart.png"
+            width="30px"
+            height="30px"
+            class="modal-btn"
+          />
         </div>
       </div>
 
@@ -85,7 +104,13 @@
         </div>
       </div>
 
-      <!-- Modal Cart, able to adjust the number of items in the cart -->
+      <!-- Modal Cart -->
+
+      <div class="modal-bg">
+        <div class="modal">
+          <span class="modal-close">X</span>
+        </div>
+      </div>
 
       <!-- Review Section -->
 
